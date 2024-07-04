@@ -1,0 +1,136 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light gray background */
+    color: #333; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333; /* Dark gray background */
+    padding: 40px 20px; /* Increased padding for header */
+    text-align: center;
+    color: #fff; /* White text */
+    border-bottom: 5px solid #ffcc00; /* Yellow border for header */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px; /* Increased font size */
+    line-height: 1.5; /* Better line spacing */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    gap: 15px; /* Space between nav items */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff; 
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px; 
+    background-color: #333; 
+    border-radius: 5px; 
+    
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ff9900; /* Darker yellow on hover */
+    background-color: #444; /* Slightly darker background on hover */
+}
+
+/* Content Sections */
+h3 {
+    text-align: center;
+    color: #333; /* Dark gray text */
+    margin-top: 40px;
+}
+
+divp {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.Abt, .content-container {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.Abt p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Image and Text Alignment */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 2px solid #ffcc00; /* Yellow border */
+}
+
+.content-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 1;
+    min-width: 300px;
+    border: 2px solid #333; /* Dark gray border */
+}
+
+.content-container ul {
+    flex: 2;
+    margin: 10px;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.content-container ul p {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.content-container divbb {
+    flex: 2;
+    margin: 10px;
+    padding-left: 20px;
+}
+
+/* Button Styling */
+button {
+    background-color: #333; /* Dark gray background */
+    color: #ffcc00; /* Yellow text */
+    padding: 12px 24px; /* Increased padding for buttons */
+    border: 2px solid #ffcc00; /* Yellow border */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px; /* Space above buttons */
+}
+
+button:hover {
+
+    background-color: #444; 
+}
+ 
+

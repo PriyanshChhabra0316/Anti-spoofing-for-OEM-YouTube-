@@ -1,0 +1,134 @@
+
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #f4f4f9; /* Light gray background */
+    color: #333; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333; /* Dark gray background */
+    padding: 40px 20px; /* Increased padding for header */
+    text-align: center;
+    color: #fff; /* White text */
+    border-bottom: 5px solid #ffcc00; /* Yellow border for header */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px; /* Increased font size */
+    line-height: 1.5; /* Better line spacing */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    gap: 15px; /* Space between nav items */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff; /* Yellow text */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px; /* Adjusted padding for better spacing */
+    background-color: #333; /* Matching button background */
+    border-radius: 5px; 
+    
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ff9900; /* Darker yellow on hover */
+    background-color: #444; /* Slightly darker background on hover */
+}
+
+/* Main Section Styling */
+main {
+    padding: 20px;
+    background-color: #fff; /* White background for content area */
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+main h1 {
+    font-size: 24px; /* Slightly smaller than header */
+    color: #333; /* Dark gray text */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main p {
+    line-height: 1.6; /* Consistent line spacing */
+    text-align: justify;
+    color: #333; /* Dark gray text */
+}
+
+/* Image Styling */
+.face_recog {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.face_recog img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #333; /* Dark gray border */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333; /* Dark gray background */
+    color: white;
+    margin-top: 40px;
+}
+
+/* Button Styling */
+button {
+    background-color: #333; /* Dark gray background */
+    color: #ffcc00; /* Yellow text */
+    padding: 12px 24px; /* Increased padding for buttons */
+    border: 2px solid #ffcc00; /* Yellow border */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px; /* Space above buttons */
+}
+
+button:hover {
+    background-color: #444; /* Slightly darker background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}

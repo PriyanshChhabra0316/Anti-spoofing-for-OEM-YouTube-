@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run Python Program</title>
+</head>
+<header>
+    <h1>Anti Spoofing/ Liveliness Detector for Face Recognition System Fake VS Real</h1>
+    
+    <nav>
+        <ul>
+            <li><a class="ed" style="text-decoration:none" color: yellow; href="index.html">Home</a></li>
+            <li><a class="ed" style="text-decoration:none"href="about.html">About</a></li>
+            <li><a class="ed" style="text-decoration:none"href="newser.html">Services</a></li>
+            <li><a class="ed" style="text-decoration:none"href="contact.html">Contact</a></li>
+        </ul>
+      </nav>       
+</header>
+<body>
+    <style>
+        body {
+    color:black;
+    font-family: Arial, sans-serif;
+    
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+li {
+    display:inline;      
+    background-color: #333;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+  }
+  
+li:hover {
+    background-color: #bbd0ff;
+    color: white;
+  }
+.ed:link {
+    color: white; 
+  }
+.ed:visited {
+    color: white;
+  }
+
+a{
+    color:black;
+}
+ .ch{
+    margin-top: 50px;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid #3498db;
+    color: #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.ch:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+.che{
+    margin-top: 50px;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid #39db34;
+    color: #39db34;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.che:hover {
+    background-color: #39db34;
+    color: #fff;
+}
+
+  
+body p{
+  font-size: 19px;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: justify;
+}
+
+div {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+    </style>
+    <h1>You are almost there</h1>
+
+    
+    <button class="ber" id="runPythonProgramButton">Start Camera</button>
+    <style>
+        .ber {
+            margin-top: 50px;
+            display: inline-block;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border: 2px solid #bc34db;
+            color: #bc34db;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .ber:hover {
+            background-color: #bc34db;
+            color: #fff;
+        }
+    </style>
+    <div id="output"></div>
+
+    <script>
+        
+        function runPythonProgram() {
+            
+            fetch('/run_python_program')
+                .then(response => response.text())
+                .then(output => {
+                    document.getElementById('output').innerText = output;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+
+     
+        document.getElementById('runPythonProgramButton').addEventListener('click', runPythonProgram);
+    </script>
+    <footer>
+        <para>&copy;Efforts by CodeCraft 2023</para>
+    </footer>
+</body>
+
+</html>
